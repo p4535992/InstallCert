@@ -73,14 +73,14 @@ import java.util.List;
  * Class used to add the server's certificate to the KeyStore
  * with your trusted certificates.
  * USAGE: <hostname>:<port> <password_keystore> <path_to_keystore> 
- * e.g. 159.213.238.75:443 changeit 
+ * e.g. localhost:443 changeit 
  * e.g. InstallCert 192.168.72.87:5050 changeit /opt/alfresco-4.2.f/java/jre/lib/security/cacerts
- * e.g. condidoc-test.regione.toscana.it:443 changeit C:\Program Files\Java\jdk1.7.0_55\jre\lib\security\cacerts
- * e.g. /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.65-2.b17.el7_1.x86_64/jre/bin/java InstallCert arss.abd.it:443 changeit /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.65-2.b17.el7_1.x86_64/jre/lib/security/cacerts
- * e.g. repo.boundlessgeo.com:443 changeit C:\Program Files\Java\jdk1.7.0_55\jre\lib\security\cacerts
- * e.g. /usr/local/jdk1.8.0_60/jre/bin/java InstallCert arss.abd.it:443 password testInternoTestKeystore.jks
+ * e.g. localhost:443 changeit C:\Program Files\Java\jdk1.7.0_55\jre\lib\security\cacerts
+ * e.g. /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.65-2.b17.el7_1.x86_64/jre/bin/java InstallCert localhost:443 changeit /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.65-2.b17.el7_1.x86_64/jre/lib/security/cacerts
+ * e.g. localhost:443 changeit C:\Program Files\Java\jdk1.7.0_55\jre\lib\security\cacerts
+ * e.g. /usr/local/jdk1.8.0_60/jre/bin/java InstallCert localhost:443 password testInternoTestKeystore.jks
  * e.g. /opt/alfresco-community/java/bin/java InstallCert 159.213.238.75:443 changeit /opt/alfresco-community/java/lib/security/cacerts
- * e.g. /opt/alfresco-community/java/bin/java InstallCert 159.213.238.75:443 kT9X6oe68t /opt/alfresco-community/alf_data/keystore/ssl.truststore 
+ * e.g. /opt/alfresco-community/java/bin/java InstallCert 159.213.238.75:443 changeit /opt/alfresco-community/alf_data/keystore/ssl.truststore 
  */
 public class InstallCert {
 	
